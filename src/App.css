@@ -1,0 +1,129 @@
+.app {
+  margin: 20px;
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header{
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.instructions-p, .counter-p{
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.word-container{
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.word-letter{
+  background-color: white;
+  border: 0;
+  box-shadow: inset 1px 1px 3px 1px gray;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  min-height: 45px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-family: inherit;
+  font-weight: 500 ;
+}
+
+.word-letter.hidden{
+  content-visibility: hidden;
+}
+
+.letters-container{
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.letter-button{
+  background-color: white;
+  border: 0;
+  box-shadow: 1px 1px 3px 1px gray;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  min-height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+  font-family: inherit;
+  font-weight: 500 ;
+}
+
+.letter-button.correct{
+  background-color: rgb(76, 212, 49);
+}
+.letter-button.incorrect{
+  background-color: rgb(212, 49, 49);
+}
+
+@media(max-width:500px){
+  .word-container{
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .word-letter{
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+  }
+
+  .letters-container{
+    gap: 5px;
+    max-width: 350px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .letter-button{
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+  }
+
+  .counter-p, .instructions-p{
+    font-size: 18px;
+  }
+}
+
+.new-game-button{
+  max-width: fit-content;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 120px;
+  border-radius: 5px;
+  border-color: rgb(85, 0, 255);
+  background-color: rgb(85, 0, 255);
+  color: white;
+  box-shadow: 1px 1px 3px 1px gray;
+  cursor: pointer;
+}
+
